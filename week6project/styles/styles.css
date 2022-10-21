@@ -1,0 +1,35 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: 1FR 1FR 1FR;
+    grid-gap: 30 px;
+    background-color: white;
+    padding: 10px;
+}
+
+.grid-item {
+    background-color: white;
+    border: 1px; 
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.greybox {
+    background-color: grey;
+
+
+}
+
+h2 {
+    font-size: 30px;
+    color:black;
+    text-align: center;
+    float: center;
+}
+
+p {
+    
+    color: red;
+    text-align: center;
+    vertical-align: bottom;
+}
