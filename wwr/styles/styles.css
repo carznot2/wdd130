@@ -43,7 +43,7 @@ nav a:hover {
 nav {
     display: flex;
     justify-content: space-around;
-    
+    background-color: #c4b294;
 }
           
 
@@ -75,7 +75,11 @@ nav {
     z-index: -1;
     
 }
-      
+
+main {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
 
 #hero-msg {
     grid-column: 2/3;
@@ -128,16 +132,27 @@ header {
     
 }
 
+
 .card-img {
     border: 10px solid #d9c2a3;
-
+    width: 100%;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
-.card-img, .mountains {
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+  
+
+.mountains {
     width: 100%;
     grid-column: 2/7;
     grid-row: 5/8;
-
+    box-shadow: 5px 5px 10px #6f7364;
+   
+ 
 }
          
 
@@ -159,9 +174,15 @@ main section img {
 
 
 #background {
-    background-color: #d8bebe ;
+    background-color: #fffffa;
+    grid-column: 1/11;
+    grid-row: 4/9;
+    height: 725px;
 
 }
+
+
+
 
 .msg {
     background-color: #6f7364;
@@ -169,8 +190,8 @@ main section img {
     line-height: 1.5em;
     padding: 35px;
     grid-column: 6/10;
-    grid-row: 6/7;
-
+    grid-row: 6/7;  
+    box-shadow: 5px 5px 10px #6f7364;
 }
 
 .msg p {
@@ -190,10 +211,7 @@ footer {
 }
 
 
-.home-title h4 {
-    color: #39120b;
-   
-}
+
 
 footer a  {
     color: #0b4f6c;
@@ -219,6 +237,9 @@ footer .social img  {
     font-family: 'Rock Salt', 'Bradley Hand', sans-serif;
     font-size: 2em;
     margin-top: 10px;
+    color:  white;
+       
+   
 }
 
 #logo_link {  
@@ -234,6 +255,12 @@ footer .social img  {
     grid-row: 2/3;
 
 }
+
+.logo    {
+    width: 80px;
+
+}
+
 
 .camping-card  { 
     margin: 200px 0;
@@ -253,32 +280,11 @@ footer .social img  {
     grid-template-columns: 1fr 3fr 1fr;
 }
 
-.card-img {
-    border: 10px solid #d9c2a3;
-    transition: transform .5s;
-    box-shadow: 5px 5px 10px #6f7364;
-}
 
-.card-img:hover {
-    opacity: .6;
-    transform: scale(1.1);
-}
-  
 
-.msg {
-    background-color: #6f7364;
-    padding: 35px;
-    grid-column: 6/10;
-    grid-row: 6/7;
-    box-shadow: 5px 5px 10px #6f7364;
-}
 
-.mountains {
-    width: 100%;
-    grid-column: 2/7;
-    grid-row: 5/8;
-    box-shadow: 5px 5px 10px #6f7364;
-}
+
+
  
 
 @media screen and (max-width: 900px) {
@@ -313,11 +319,7 @@ footer .social img  {
     #background {
         display: none;
     }
-    .mountains, .msg {
-        width: 80%;
-        display: block;
-        margin: 0 auto;
-    }
+   
     footer {
         margin-top: 25px;
     }
