@@ -21,17 +21,182 @@
     --nav-background-color: #003049;
     --nav-hover-link-color:  #003049;
     --nav-hover-background-color: #eae2b7;
+
+    --header-height: 250px;
   }
   
-body {
+.content {
     font-family: Mukta, Helvetica, sans-serif;
     color: var(--primary-color)
 }
+  .content-grid  {
+    display: grid;
+    grid-template-rows: var(--header-height) 1fr 30px;
+    grid-template-columns: 1fr;
+  }
+  .header {
+    grid-row: 1;
+    grid-column: 1;
+    
+  }
+
+  .header-grid {
+    max-height: var(--header-height);
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: var(--header-height) 1fr;
+    
+    background-color: #eae2b7
+    
+
+  }
+
+  .main {
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .main-grid {
+    display:grid;
+    
+    grid-template-rows: 500px  500px 500px 500px 1fr 50px;
+    grid-template-columns: 1fr;
+   
+  }
+
+  .car-card {
+    grid-row: 1;
+    grid-column: 1; 
+   
+    padding:0;
+  }
+
+  .pickup-card {
+    grid-row: 2;
+    grid-column: 1; 
+  }
+
+  .suv-card {
+    grid-row: 3;
+    grid-column: 1; 
+
+  }
+
+  .van-card {
+    grid-row: 4;
+    grid-column: 1; 
+
+  }
+
+  .card-grid {
+    display:grid;
+    grid-template-rows: 3rem 2rem 1fr;
+    grid-template-columns: 500px 1fr;
+    margin: 0;
+    padding-right: 10rem;
+    padding-left: 3rem;
+   
+  }
+   .card-img {
+    grid-row: 1/4;
+    grid-column: 1; 
+    width: 100%;
+    height: 100%;
+   }
+
+   .card-headline {
+    grid-row: 1;
+    grid-column: 2; 
+   }
+
+   .card-subheadline {
+    grid-row: 2;
+    grid-column: 2; 
+   }
+   .card-text {
+    grid-row: 3;
+    grid-column: 2; 
+   }
+
 
 .logo {
-  width:10%;
+  grid-row: 1/6;
+  grid-column: 1;
+  height:100%;
+  width:150%;
+  
 }
 
+.headline {
+  grid-row: 1;
+  grid-column: 2;
+  padding-left: 15%;
+}
+
+.sub-headline {
+  grid-row: 2;
+  grid-column: 2;
+  text-align: center;
+}
+
+.menu  {
+  grid-row: 4;
+  grid-column: 2;
+
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+
+}
+
+.home-option {
+  grid-row: 1;
+  grid-column: 1;
+  text-align: center;
+}
+
+.george {
+  grid-row:5;
+  grid-column: 1;
+  padding-right: 6rem;
+}
+.george p {
+  text-align: justify;
+  padding-left: 6rem;
+  }
+
+.george-img {
+  float:right;
+  padding: 5px;
+  height:  250px;
+  
+
+
+}
+  
+
+
+.registration-option {
+  grid-row: 1;
+  grid-column: 2;
+  text-align: center;
+}
+
+
+
+.search-option {
+  grid-row: 1;
+  grid-column: 3;
+  text-align: center;
+
+
+}
+
+
+.grid-template
 .cars  {
   
   width: 20%;
@@ -130,3 +295,30 @@ h1, h2, h3, h4, h5, h6 {
   700 - Bold 
   900 - extra heavy bold*/  
 }
+
+
+footer {
+    
+  background-color: #6f7364;
+  padding: 25px 50px;
+  margin-top: 200px; 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+
+footer a  {
+  color: #0b4f6c;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #0b4f6c;
+  text-decoration: underline;
+}
+
+footer .social img  {
+  padding-top: 15px;
