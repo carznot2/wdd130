@@ -1,130 +1,141 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Mukta:wght@400;700&display=swap');
 
 :root {
-    /* change the values below to your colors from your palette */
-    --primary-color: #003049   ;
-    --secondary-color: #f77f00 ;
-    --accent1-color: #eae2b7;
-    --accent2-color: #d62828;
-    
-    /* change the values below to your chosen font(s) */
-    --heading-font: Merriweather, sans;
-    --paragraph-font: Mukta, Helvetica, sans-serif;
-  
-    /* these colors below should be chosen from among your palette colors above */
-    --headline-color-on-white: #003049;  /* headlines on a white background */ 
-    --headline-color-on-color: #eae2b7; /* headlines on a colored background */ 
-    --paragraph-color-on-white:  #003049; /* paragraph text on a white background */ 
-    --paragraph-color-on-color: #eae2b7; /* paragraph text on a colored background */ 
-    --paragraph-background-color: #003049;
-    --nav-link-color: #fff;
-    --nav-background-color: #003049;
-    --nav-hover-link-color:  #003049;
-    --nav-hover-background-color: #eae2b7;
+  /* change the values below to your colors from your palette */
+  --primary-color: #003049;
+  --secondary-color: #f77f00;
+  --accent1-color: #eae2b7;
+  --accent2-color: #d62828;
 
-    --header-height: 250px;
-  }
-  
-.content {
-    font-family: Mukta, Helvetica, sans-serif;
-    color: var(--primary-color)
+  /* change the values below to your chosen font(s) */
+  --heading-font: Merriweather, sans;
+  --paragraph-font: Mukta, Helvetica, sans-serif;
+
+  /* these colors below should be chosen from among your palette colors above */
+  --headline-color-on-white: #003049;
+  /* headlines on a white background */
+  --headline-color-on-color: #eae2b7;
+  /* headlines on a colored background */
+  --paragraph-color-on-white: #003049;
+  /* paragraph text on a white background */
+  --paragraph-color-on-color: #eae2b7;
+  /* paragraph text on a colored background */
+  --paragraph-background-color: #003049;
+  --nav-link-color: #fff;
+  --nav-background-color: #003049;
+  --nav-hover-link-color: #003049;
+  --nav-hover-background-color: #eae2b7;
+
+  --header-height: 250px;
 }
-  .content-grid  {
-    display: grid;
-    grid-template-rows: var(--header-height) 1fr 30px;
-    grid-template-columns: 1fr;
-  }
-  .header {
-    grid-row: 1;
-    grid-column: 1;
-    
-  }
 
-  .header-grid {
-    max-height: var(--header-height);
-    display:grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: var(--header-height) 1fr;
-    
-    background-color: #eae2b7
-    
+.content {
+  font-family: Mukta, Helvetica, sans-serif;
+  color: var(--primary-color)
+}
 
-  }
+.content-grid {
+  display: grid;
+  grid-template-rows: var(--header-height) 1fr 30px;
+  grid-template-columns: 1fr;
+}
 
-  .main {
-    grid-row: 2;
-    grid-column: 1;
-  }
+.header {
+  grid-row: 1;
+  grid-column: 1;
 
-  .main-grid {
-    display:grid;
-    
-    grid-template-rows: 500px  500px 500px 500px 1fr 50px;
-    grid-template-columns: 1fr;
-   
-  }
+}
 
-  .car-card {
-    grid-row: 1;
-    grid-column: 1; 
-   
-    padding:0;
-  }
+.header-grid {
+  max-height: var(--header-height);
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-columns: var(--header-height) 1fr;
 
-  .pickup-card {
-    grid-row: 2;
-    grid-column: 1; 
-  }
+  background-color: #eae2b7
+}
 
-  .suv-card {
-    grid-row: 3;
-    grid-column: 1; 
+.main {
+  grid-row: 2;
+  grid-column: 1;
+}
 
-  }
+.main-grid {
+  display: grid;
 
-  .van-card {
-    grid-row: 4;
-    grid-column: 1; 
+  grid-template-rows: 500px 500px 500px 500px 1fr 50px;
+  grid-template-columns: 1fr;
 
-  }
+}
 
-  .card-grid {
-    display:grid;
-   
-    grid-template-columns: 500px 1fr;
-    margin: 0;
-    padding-right: 10rem;
-    padding-left: 3rem;
-   
-  }
-   .card-img {
-    grid-row: 1/4;
-    grid-column: 1; 
-    width: 100%;
-   
-   }
+.car-card {
+  grid-row: 1;
+  grid-column: 1;
 
-   .card-headline {
-    grid-row: 1;
-    grid-column: 2; 
-   }
+  padding: 0;
+}
 
-   .card-subheadline {
-    grid-row: 2;
-    grid-column: 2; 
-   }
-   .card-text {
-    grid-row: 3;
-    grid-column: 2; 
-   }
+.pickup-card {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.cube-card {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.suv-card {
+  grid-row: 3;
+  grid-column: 1;
+
+}
+
+.van-card {
+  grid-row: 4;
+  grid-column: 1;
+
+}
+
+.card-grid {
+  display: grid;
+
+  grid-template-columns: 500px 1fr;
+  margin: 0;
+  padding-right: 10rem;
+  padding-left: 3rem;
+
+}
+
+.card-img {
+  grid-row: 1/4;
+  grid-column: 1;
+  width: 100%;
+
+}
+
+.card-headline {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+.card-subheadline {
+  grid-row: 2;
+  grid-column: 2;
+}
+
+.card-text {
+  grid-row: 3;
+  grid-column: 2;
+}
 
 
 .logo {
   grid-row: 1/6;
   grid-column: 1;
-  height:100%;
-  width:150%;
-  
+  height: 100%;
+  width: 150%;
+
 }
 
 .headline {
@@ -139,7 +150,7 @@
   text-align: center;
 }
 
-.menu  {
+.menu {
   grid-row: 4;
   grid-column: 2;
 
@@ -159,24 +170,25 @@
 }
 
 .george {
-  grid-row:5;
+  grid-row: 5;
   grid-column: 1;
   padding-right: 6rem;
 }
+
 .george p {
   text-align: justify;
   padding-left: 6rem;
-  }
+}
 
 .george-img {
-  float:right;
+  float: right;
   padding: 5px;
-  height:  250px;
-  
+  height: 250px;
+
 
 
 }
-  
+
 
 
 .registration-option {
@@ -196,9 +208,8 @@
 }
 
 
-.grid-template
-.cars  {
-  
+.grid-template .cars {
+
   width: 20%;
 
 }
@@ -213,76 +224,83 @@
 
 
 form {
-    /* Center the form on the page */
-    margin: 0 auto;
-    width: 600px;
-    /* Form outline */
-    padding: 1em;
-    border: 3px solid var(--primary-color);
-    border-radius: 1em;
-  }top: ;
-  
-  ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  form li + li {
-    margin-top: 1em;
-  }
-  
-  label {
-    /* Uniform size & alignment */
-    display: inline-block;
-    width: 140px;
-    text-align: right;
-  }
-  
-  input,
-  textarea {
-    /* To make sure that all text fields have the same font settings
-       By default, textareas have a monospace font */
-    font: 1em sans-serif;
-  
-    /* Uniform text field size */
-    width: 450px;
-    box-sizing: border-box;
-  
-    /* Match form field borders */
-    border: 2px solid #999;
-  }
-  
-  input:focus,
-  textarea:focus {
-    /* Additional highlight for focused elements */
-    border-color: #000;
-  }
-  
-  textarea {
-    /* Align multiline text fields with their labels */
-    vertical-align: top;
-  
-    /* Provide space to type some text */
-    height: 5em;
-  }
-  
- 
-  
-  button {
-    /* This extra margin represent roughly the same space as the space
-       between the labels and their text fields */
-   
-    text-align:center;
-    margin: 5% 80% 1%;
-    
-  }
-  
-h1, h2, h3, h4, h5, h6 {
-  font-family:  Merriweather, serif;
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 600px;
+  /* Form outline */
+  padding: 1em;
+  border: 3px solid var(--primary-color);
+  border-radius: 1em;
 }
 
-.h6  {
+top:;
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li+li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 140px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 450px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 2px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+
+
+button {
+  /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+
+  text-align: center;
+  margin: 5% 80% 1%;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Merriweather, serif;
+}
+
+.h6 {
   text-align: right;
 }
 
@@ -297,15 +315,15 @@ h1, h2, h3, h4, h5, h6 {
   /* 100 - Very thin
   400 - Normal TExt
   700 - Bold 
-  900 - extra heavy bold*/  
+  900 - extra heavy bold*/
 }
 
 
 footer {
-    
+
   background-color: #f77f00;
   padding: 25px 50px;
-  margin-top: 200px; 
+  margin-top: 200px;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -314,7 +332,7 @@ footer {
 
 
 
-footer a  {
+footer a {
   color: #0b4f6c;
   text-decoration: none;
 }
@@ -324,4 +342,103 @@ footer a:hover {
   text-decoration: underline;
 }
 
+.btn-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
 
+.btn {
+  display: inline-block;
+  border: 6px solid black;
+  background-color: white;
+  color: black;
+  padding: 14px 28px;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.see,
+.another,
+.list,
+.trade {
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+
+}
+
+/* Green */
+.see {
+
+  border-color: black;
+  color: white;
+  height: 150px;
+  width: 15%;
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.see:hover {
+  background-color: purple;
+  color: white;
+}
+
+
+
+
+/* Orange */
+.another {
+  border-color: black;
+  color: white;
+  height: 150px;
+  width: 15%;
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+  
+}
+
+.another:hover {
+  background: blue;
+  color: white;
+}
+
+/* Red */
+.list {
+  border-color: black;
+  color: white;
+  height: 150px;
+  width: 15%;
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.list:hover {
+  background: #f44336;
+  color: white;
+}
+
+/* Gray */
+.trade {
+  border-color: black;
+  color: white;
+  height: 150px;
+  width: 15%;
+  background: black;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.trade:hover {
+  background: green;
+  color: white;
+}
+
+.btn-work { 
+  text-align: center; 
+}
