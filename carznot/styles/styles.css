@@ -32,6 +32,7 @@
 .content {
   font-family: Mukta, Helvetica, sans-serif;
   color: var(--primary-color)
+  
 }
 
 .content-grid {
@@ -46,6 +47,8 @@
 
 }
 
+
+
 .header-grid {
   max-height: var(--header-height);
   display: grid;
@@ -58,6 +61,7 @@
 .main {
   grid-row: 2;
   grid-column: 1;
+  
 }
 
 .main-grid {
@@ -236,11 +240,12 @@
 form {
   /* Center the form on the page */
   margin: 0 auto;
-  width: 600px;
+  width: 700px;
   /* Form outline */
   padding: 1em;
   border: 3px solid var(--primary-color);
   border-radius: 1em;
+  background-color: #eae2b7;
 }
 
 top:;
