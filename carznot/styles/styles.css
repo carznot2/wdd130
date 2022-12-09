@@ -374,9 +374,18 @@ footer a:hover {
   cursor: pointer;
 }
 
-.see,
-.another,
-.list,
+.btn2 {
+  display: inline-block;
+  border: 6px solid black;
+  background-color: white;
+  color: black;
+  padding: 7px 14px;
+  font-size: 30px;
+  cursor: pointer;
+  
+}
+
+
 .trade {
 
   display: flex;
@@ -457,3 +466,4 @@ footer a:hover {
 .btn-work { 
   text-align: center; 
 }
+
