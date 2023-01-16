@@ -232,6 +232,7 @@ nav a:hover {
   grid-column: 2;
   text-align: center;
   align-self: center;
+  color: red;
   
 }
 
