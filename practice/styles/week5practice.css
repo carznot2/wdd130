@@ -1,0 +1,44 @@
+body {
+    box-sizing: border-box;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: linen;
+    margin: 0px auto;
+    text-align: center;
+}
+
+section  {
+    background-color: #737373 ;
+    width: 100%;
+}
+
+.upperbubbles {
+    width:100%;
+}
+
+.bubbles  {
+    height: 30%;
+    width: 100%;
+
+}
+
+.lowergray {
+    width:100%;
+}
+
+.lowergray img   {
+        border: 20px solid #444444 ;
+        width: 250px;
+        height: 250px;
+        object-fit: cover;
+        border-radius: 50%;
+        margin:50px;
+}
+
+.footer {
+    width: 100%;
+}
+
+
+
+
