@@ -104,7 +104,7 @@ getTemples()
 
 function reset()
 {
-    document.querySelector("#temples").innerHTML="" 
+    document.querySelector("#temples").innerHTML=""; 
 }
 // - Creates an HTML <article> element
 // - Creates an HTML <h3> element and add the temple's templeName property to it
@@ -126,15 +126,24 @@ function sortBy()
     let filter=document.querySelector("#sortBy").value;
     switch(filter)
     {
-        case "TempleNameeAscending":
+        case "templeNameAscending":
             output(
                 temples.sort((temple1, temple2)=>{
                     if (temple1.templeName<temple2.templeName)return-1
                     else if (temple1.templeName>temple2.templeName)return 1
+                    else return 0;
                 })
             )
-            break
-
+            break;
+            case "templeNameDescending":
+                output(
+                    temples.sort((temple1, temple2)=>{
+                        if (temple1.templeName<temple2.templeName)return 1
+                        else if (temple1.templeName>temple2.templeName)return -1
+                        else return 0;
+                })
+            )
+            break;
   
 
     }
@@ -145,7 +154,8 @@ function sortBy()
 // - Calls the output function passing in the sorted list of temples
 
 // Step 9: Add a change event listener to the HTML element with an ID of sortBy that calls the sortBy function
-
+    document.querySelector('#sortBy').addEventListener("change", sortBy);
+        
 /* STRETCH */
 
 // Consider adding a "Filter by" feature that allows users to filter the list of temples
